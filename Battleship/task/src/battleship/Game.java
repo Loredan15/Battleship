@@ -27,6 +27,7 @@ public class Game {
                     System.out.println("Error, too close to another ship");
                 } else {
                     takePositions(coordinates);
+                    ship.placeShipOnDesk(coordinates);
                     break;
                 }
             }
@@ -63,6 +64,7 @@ public class Game {
                 System.out.println("Error: Input is invalid");
             } else {
                 board.isHit(coordinatesShot);
+
                 board.printBoard();
                 break;
             }

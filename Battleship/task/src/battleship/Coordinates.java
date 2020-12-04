@@ -23,7 +23,10 @@ public class Coordinates {
            this.a = a;
            translateOneCoordinates();
        }
+    }
 
+    public String getA() {
+        return a;
     }
 
     private boolean checkIfInputIsValidOne(String a) {
